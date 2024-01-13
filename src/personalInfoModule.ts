@@ -23,4 +23,10 @@ export interface PersonalInfo {
 
 export function createPersonalInfo(name: string, age: number, email: string): PersonalInfo {
         // 請在此處寫下你的程式碼
+        const obj: PersonalInfo = {
+            name,
+            age,
+            email
+        }
+        return obj
 }

@@ -6,4 +6,14 @@
  */
 
 // 請在下方寫下你的程式碼
+export interface FetchData {
+  id: number;
+  title: string;
+}
 
+export async function fetchData(url: string): Promise<FetchData> {
+  return await fetch(url)
+  .then((res) => {
+    return res.json()
+  })
+}
